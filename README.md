@@ -34,6 +34,8 @@ So go to the awesome [Yeopress repo](https://github.com/wesleytodd/YeoPress) and
 
 Now the generator is going to ask you for the url **localhost/cecs300wp "Or whatever you named your folder"**, just press enter for table prefix(Unless you want something custom), just press enter for databasehost(Unless you want something custom), enter the name of the database you created in step 2, enter the username of the database you created in step 2, enter the user password of the database you created in step 2, and the rest you can enter whatever you like :)
 
+**Actually for the last steps when they ask you if you would like a theme, say yes and it should do most of step 4 for you, as long as you enter the default parameters (Just press enter)
+
 go to the url you entered (localhost/cecs300wp "Or whatever you named your folder") and BAM! it should all be there, just go through the usual wordpress process :)
 
 Lastly, we're going to set up a sass based theme and livereload
