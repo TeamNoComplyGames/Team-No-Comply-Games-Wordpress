@@ -53,9 +53,17 @@ Nto use the themes awesome sass and livereload, first check out the awesome read
 if run just 'grunt' it will start the livereload server and things. and start watching your sass files and everything :)
 
 however, livereload was acting up for me, so if you you replace the following line:
+
+
     wp_register_script('livereload', '<%= conf.get("url") %>:35729/livereload.js?snipver=1', null, false, true);
+    
+    
 with:
+
+
     wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
+    
+    
 And then you restart the 'grunt' command, it should now be livereloading!
 
 
