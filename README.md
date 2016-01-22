@@ -38,7 +38,7 @@ go to the url you entered (localhost/cecs300wp "Or whatever you named your folde
 
 Lastly, we're going to set up a sass based theme and livereload
 
-##Step 4: SASS and livereload and final thoughts
+##Step 4: SASS and livereload and final thoughts (If you clone this repo, you can skip some of these steps, just see below for usage and installing)
 
 So awesome, you got everything set up and cool!
 
