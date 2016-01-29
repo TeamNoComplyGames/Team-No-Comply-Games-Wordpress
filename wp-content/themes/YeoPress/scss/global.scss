@@ -25,7 +25,7 @@ body {
 	margin: 0;
 	font-size: $size_base;
 	line-height: 1.4;
-	background: #e1e1e1;
+	background: $bodyBg;
 }
 /*	Apply to all elements. In a responsive design, this is almost always a good idea */
 * {
@@ -179,8 +179,8 @@ input.button:active {
 #page-wrap {
 	width: 90%;
 	margin: 0 auto;
-	-webkit-box-shadow: 0 0 $size_base * 3 0 #444;
-	box-shadow: 0 0 $size_base * 3 0 #444;
+	-webkit-box-shadow: 0 0 $size_base * 3 0 $borderShadows;
+	box-shadow: 0 0 $size_base * 3 0 $borderShadows;
 }
 #page-header {
 	padding: $size_base;
@@ -205,21 +205,21 @@ input.button:active {
 		-webkit-border-radius: $size_base * 2;
 		border-radius: $size_base * 2;
 
-		background: #298cba; /* Old browsers */
+		background: $oldBrowserBgStart; /* Old browsers */
 		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5OGNiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZDYzODUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-		background: -moz-linear-gradient(top,  #298cba 0%, #1d6385 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#298cba), color-stop(100%,#1d6385)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #298cba 0%,#1d6385 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  #298cba 0%,#1d6385 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  #298cba 0%,#1d6385 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  #298cba 0%,#1d6385 100%); /* W3C */
+		background: -moz-linear-gradient(top,  $oldBrowserBgStart 0%, $oldBrowserBgEnd 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$oldBrowserBgStart), color-stop(100%,$oldBrowserBgEnd)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  $oldBrowserBgStart 0%,$oldBrowserBgEnd 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  $oldBrowserBgStart 0%,$oldBrowserBgEnd 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  $oldBrowserBgStart 0%,$oldBrowserBgEnd 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  $oldBrowserBgStart 0%,$oldBrowserBgEnd 100%); /* W3C */
 
 		.lt-ie9 & {
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#298cba', endColorstr='#1d6385',GradientType=0 ); /* IE6-8 */
 		}
 
 		a {
-			color: #fff;
+			color: $oldBrowserBgStart;
 			text-decoration: none;
 		}
 
@@ -232,16 +232,16 @@ input.button:active {
 /* Content */
 #content-wrap {
 	padding: $size_base;
-	background: #fff;
+	background: $buttonText;
 }
 .article {
 	margin-bottom: $size_base;
-	border-bottom: 1px solid #444;
+	border-bottom: 1px solid $borderShadows;
 }
 .article-header {
 	margin-bottom: $size_base;
 	padding-bottom: $size_base;
-	border-bottom: 1px solid #444;
+	border-bottom: 1px solid $borderShadows;
 }
 .article-title {
 	margin-bottom: 0;
@@ -256,7 +256,7 @@ input.button:active {
 
 /* Sidebar */
 #page-sidebar {
-	background: #eee;
+	background: $sidebarBg;
 	padding: $size_base;
 
 	-webkit-border-radius: $size_base;

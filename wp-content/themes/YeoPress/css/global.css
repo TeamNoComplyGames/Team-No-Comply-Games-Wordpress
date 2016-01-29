@@ -63,8 +63,8 @@ dfn {
 }
 
 mark {
-  background: #fff;
-  color: #444;
+  background: #83a4de;
+  color: #deeee6;
 }
 
 code,
@@ -172,7 +172,7 @@ img {
 
   pre,
   blockquote {
-    border: 1px solid #444;
+    border: 1px solid #deeee6;
     page-break-inside: avoid;
   }
 
@@ -226,7 +226,7 @@ input,
 select,
 textarea {
   font-family: Arial, sans-serif;
-  color: #444;
+  color: #deeee6;
 }
 
 body {
@@ -234,7 +234,7 @@ body {
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
-  background: #e1e1e1;
+  background: #debd8b;
 }
 
 /*	Apply to all elements. In a responsive design, this is almost always a good idea */
@@ -248,13 +248,13 @@ body {
 	Links
 /* ========================================================================== */
 a {
-  color: #fff;
+  color: #629452;
   text-decoration: underline;
 }
 
 a:focus,
 a:hover {
-  color: #bfbfbf;
+  color: #2c4225;
 }
 
 a:focus {
@@ -316,14 +316,14 @@ ul {
 
 /* Selection Colors */
 ::-moz-selection {
-  background: #444;
-  color: #fff;
+  background: #deeee6;
+  color: #83a4de;
   text-shadow: none;
 }
 
 ::selection {
-  background: #444;
-  color: #fff;
+  background: #deeee6;
+  color: #83a4de;
   text-shadow: none;
 }
 
@@ -386,10 +386,10 @@ input.button {
 }
 
 #page-logo {
-  color: #fff;
+  color: #83a4de;
 }
 #page-logo a {
-  color: #fff;
+  color: #83a4de;
 }
 
 #page-header ul {
@@ -402,20 +402,20 @@ input.button {
   margin: 0 0 0.5em;
   -webkit-border-radius: 2em;
   border-radius: 2em;
-  background: #298cba;
+  background: #83a4de;
   /* Old browsers */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5OGNiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZDYzODUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #298cba 0%, #1d6385 100%);
+  background: -moz-linear-gradient(top, #83a4de 0%, #5a83c5 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #298cba), color-stop(100%, #1d6385));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83a4de), color-stop(100%, #5a83c5));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #298cba 0%, #1d6385 100%);
+  background: -webkit-linear-gradient(top, #83a4de 0%, #5a83c5 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #298cba 0%, #1d6385 100%);
+  background: -o-linear-gradient(top, #83a4de 0%, #5a83c5 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #298cba 0%, #1d6385 100%);
+  background: -ms-linear-gradient(top, #83a4de 0%, #5a83c5 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #298cba 0%, #1d6385 100%);
+  background: linear-gradient(to bottom, #83a4de 0%, #5a83c5 100%);
   /* W3C */
 }
 .lt-ie9 #page-header ul li {
@@ -423,17 +423,17 @@ input.button {
   /* IE6-8 */
 }
 #page-header ul li a {
-  color: #fff;
+  color: #83a4de;
   text-decoration: none;
 }
 #page-header ul li:hover a {
-  color: #444;
+  color: #deeee6;
 }
 
 /* Content */
 #content-wrap {
   padding: 1em;
-  background: #fff;
+  background: #b49c7b;
 }
 
 .article {
@@ -460,7 +460,7 @@ input.button {
 
 /* Sidebar */
 #page-sidebar {
-  background: #eee;
+  background: #83a4de;
   padding: 1em;
   -webkit-border-radius: 1em;
   border-radius: 1em;
