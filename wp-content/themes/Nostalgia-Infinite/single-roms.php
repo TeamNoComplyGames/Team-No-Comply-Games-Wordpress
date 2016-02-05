@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area" style="background-color: red;">
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 			<?php
 				// Start the Loop.
@@ -21,6 +21,11 @@ get_header(); ?>
 					 * (where ___ is the post format) and that will be used instead.
 					 */
 					get_template_part( 'content', get_post_format() );
+
+					//Display the custom field link
+					$romurl = types_render_field("rom-url", array("output"=>"html"));
+					printf("Download Link(Emuparadise): %s", $romurl);
+
 
 					// Previous/next post navigation.
 					twentyfourteen_post_nav();
