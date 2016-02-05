@@ -22,6 +22,10 @@ get_header(); ?>
 					 */
 					get_template_part( 'content', get_post_format() );
 
+					//Display the custom field image
+					$romurl = types_render_field("rom-image", array("output"=>"html"));
+					printf("%s", $romurl);
+
 					//Display the custom field link
 					$romurl = types_render_field("rom-url", array("output"=>"html"));
 					printf("Download Link(Emuparadise): %s", $romurl);
