@@ -1,6 +1,10 @@
 <?php
 /**
- * Template Name: Contributor Page
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that
+ * other 'pages' on your WordPress site will use a different template.
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
@@ -17,35 +21,26 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 ?>
-
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
-			?>
 
-			<!-- This is HTML5 -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php
-					the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
+					// Include the page content template.
+					get_template_part( 'content', 'page' );
 
-					// Output the authors list.
-					twentyfourteen_list_authors();
-
-					edit_post_link( __( 'Edit', 'twentyfourteen' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' );
-				?>
-			</article><!-- #post-## -->
-
-			<?php
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) {
 						comments_template();
 					}
 				endwhile;
 			?>
+
 		</div><!-- #content -->
 	</div><!-- #primary -->
+	<?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->
 
 <?php

@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying Author archive pages
+ * The template for displaying Tag pages
+ *
+ * Used to display archive-type pages for posts in a tag.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -11,41 +13,24 @@
 
 get_header(); ?>
 
-	<!-- This is HTML5 -->
 	<section id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-				<!-- This is HTML5 -->
 			<header class="archive-header">
-				<h1 class="archive-title">
-					<?php
-						/*
-						 * Queue the first post, that way we know what author
-						 * we're dealing with (if that is the case).
-						 *
-						 * We reset this later so we can run the loop properly
-						 * with a call to rewind_posts().
-						 */
-						the_post();
+				<h1 class="archive-title"><?php printf( __( 'Tag Archives: %s', 'twentyfourteen' ), single_tag_title( '', false ) ); ?></h1>
 
-						printf( __( 'All posts by %s', 'twentyfourteen' ), get_the_author() );
-					?>
-				</h1>
-				<?php if ( get_the_author_meta( 'description' ) ) : ?>
-				<div class="author-description"><?php the_author_meta( 'description' ); ?></div>
-				<?php endif; ?>
+				<?php
+					// Show an optional term description.
+					$term_description = term_description();
+					if ( ! empty( $term_description ) ) :
+						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					endif;
+				?>
 			</header><!-- .archive-header -->
 
 			<?php
-					/*
-					 * Since we called the_post() above, we need to rewind
-					 * the loop back to the beginning that way we can run
-					 * the loop properly, in full.
-					 */
-					rewind_posts();
-
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
 
@@ -66,7 +51,6 @@ get_header(); ?>
 
 				endif;
 			?>
-
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
