@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Rom Page
+ * Template Name: Skate Video Page
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen

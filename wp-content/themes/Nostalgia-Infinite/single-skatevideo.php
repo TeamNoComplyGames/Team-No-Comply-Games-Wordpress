@@ -27,8 +27,8 @@ get_header(); ?>
 					// printf("%s", $romurl);
 
 					//Display the custom field link
-					$romurl = types_render_field("rom-url", array("output"=>"html"));
-					printf("Download Link(Emuparadise): %s", $romurl);
+					$videourl = types_render_field("video-url", array("output"=>"html"));
+					printf("Video Link: %s", $videourl);
 
 
 					// Previous/next post navigation.
