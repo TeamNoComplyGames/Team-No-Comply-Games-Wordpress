@@ -30,6 +30,9 @@ get_header(); ?>
 					$videourl = types_render_field("video-url", array("output"=>"html"));
 					printf("Video Link: %s", $videourl);
 
+					$embedurl = types_render_field("embed-video", array("output"=>"html"));
+					printf("Watch Here: %s", $embedurl);
+
 
 					// Previous/next post navigation.
 					twentyfourteen_post_nav();
