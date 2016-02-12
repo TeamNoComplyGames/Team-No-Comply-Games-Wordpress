@@ -1,4 +1,4 @@
-/* 
+/*
  Theme Name:   Nostalgia Infinite
  Theme URI:    https://aaronthedev.com/
  Description:  random theme of music
@@ -12,3 +12,8 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
+@import url("animate.css");
+
+.green {
+  background-color: whitesmoke;
+}

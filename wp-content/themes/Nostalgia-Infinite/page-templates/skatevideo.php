@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div id="main-content" class="main-content" style = "background-color: green;">
+<div id="main-content" class="main-content green">
 
 <?php
 	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
