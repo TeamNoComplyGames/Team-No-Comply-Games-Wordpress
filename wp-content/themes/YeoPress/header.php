@@ -16,7 +16,7 @@
 		<header id="page-header">
 			<h1 id="page-logo">
 				<?php if (!is_front_page()): ?>
-					<a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?> - <?php bloginfo('description') ?>">
+					<a href="<?php bloginfo('url') ?>">
 						<?php bloginfo('name') ?>
 					</a>
 				<?php else: ?>
