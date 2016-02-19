@@ -1,6 +1,11 @@
 /* ==========================================================================
 	Variables
 /* ========================================================================== */
+
+//Pokemon Styles
+//http://pokepalettes.com/#hydreigon
+//http://pokepalettes.com/#chandelure
+
 /* Directories */
 $theme_dir: '/<%= conf.get('contentDir') %>/themes/<%= conf.get('themeDir') %>/';
 $images_dir: '/<%= conf.get('contentDir') %>/themes/<%= conf.get('themeDir') %>/images/';

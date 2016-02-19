@@ -31,4 +31,5 @@
 				'container_id'   => 'primary-nav'
 			)) ?>
 		</header>
-		<div id="content-wrap">
+		<div id="content-wrap"
+        class = "pageContent">
