@@ -1,7 +1,7 @@
 /* ==========================================================================
 	Imports
 /* ========================================================================== */
-@import 'reset', 'variables';
+@import 'reset', 'variables', 'animate';
 
 /* ==========================================================================
 	Base
@@ -18,7 +18,7 @@ input,
 select,
 textarea {
 	font-family: Arial, sans-serif;
-	color: $color_body_copy;
+	color: $textColor;
 }
 body {
 	height: 100%;
@@ -39,11 +39,11 @@ body {
 /* ========================================================================== */
 a {
 	color: $color_link;
-	text-decoration: underline;
+	text-decoration: none !important
 }
 a:focus,
 a:hover {
-	color: darken($color_link, 25%);
+	color: lighten($color_link, 25%);
 }
 a:focus {
 	outline: thin dotted;
@@ -102,13 +102,13 @@ ul {
 
 /* Selection Colors */
 ::-moz-selection {
-	background: $color_body_copy;
-	color: $color_opposite;
+	background: $textColor;
+	color: $containerBg;
 	text-shadow: none;
 }
 ::selection {
-	background: $color_body_copy;
-	color: $color_opposite;
+	background: $textColor;
+	color: $containerBg;
 	text-shadow: none;
 }
 
@@ -187,10 +187,14 @@ input.button:active {
 	background: url($images_dir + 'black_lozenge.png');
 }
 #page-logo {
-	color: $color_opposite;
+	color: $containerBg;
 
 	a {
-		color: $color_opposite;
+		color: $containerBg;
+
+		&:hover {
+			color: darken($containerBg, 25%)
+		}
 	}
 }
 #page-header ul {
@@ -224,7 +228,7 @@ input.button:active {
 		}
 
 		&:hover a {
-			color: $color_body_copy;
+			color: $textColor;
 		}
 	}
 }
@@ -232,7 +236,7 @@ input.button:active {
 /* Content */
 #content-wrap {
 	padding: $size_base;
-	background: $buttonText;
+	background: $containerBg;
 }
 .article {
 	margin-bottom: $size_base;
@@ -299,7 +303,9 @@ input.button:active {
 /* Footer */
 #page-footer {
 	width: 90%;
-	margin: 0 auto;
+	float: left;
+	margin-left: 1em;
+	color: $containerBg;
 	padding: $size_base 0;
 }
 
@@ -358,6 +364,11 @@ input.button:active {
 		width: 65%;
 		padding: $size_base;
 	}
+
+	#page-footer {
+		margin-left: 1.9em;
+	}
+
 	#page-sidebar {
 		width: 31%;
 	}

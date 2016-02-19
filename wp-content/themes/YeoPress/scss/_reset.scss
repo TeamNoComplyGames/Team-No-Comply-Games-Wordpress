@@ -47,8 +47,8 @@ dfn {
 	font-style: italic;
 }
 mark {
-	background: $color_opposite;
-	color: $color_body_copy;
+	background: $containerBg;
+	color: $textColor;
 }
 code,
 kbd,
@@ -137,7 +137,7 @@ img {
 	}
 	pre,
 	blockquote {
-		border: 1px solid $color_body_copy;
+		border: 1px solid $textColor;
 		page-break-inside: avoid;
 	}
 	thead {

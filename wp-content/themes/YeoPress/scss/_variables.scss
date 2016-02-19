@@ -6,15 +6,14 @@ $theme_dir: '/<%= conf.get('contentDir') %>/themes/<%= conf.get('themeDir') %>/'
 $images_dir: '/<%= conf.get('contentDir') %>/themes/<%= conf.get('themeDir') %>/images/';
 
 /* Colors */
-$color_body_copy: #deeee6;
-$color_link: #629452;
-$color_opposite: #83a4de;
-$borderShadows: #444;
-$bodyBg: #debd8b;
-$buttonText: #b49c7b;
-$sidebarBg: #83a4de;
-$oldBrowserBgStart: #83a4de;
-$oldBrowserBgEnd: #5a83c5;
+$textColor: #ffffff;
+$color_link: #5a83cd;
+$borderShadows: #313131;
+$bodyBg: #ffffff;
+$containerBg: #313131;
+$sidebarBg: #5a5a5a;
+$oldBrowserBgStart: #7352e6;
+$oldBrowserBgEnd: #4129b4;
 
 /* Font Sizes */
 $size_base: 1em;
