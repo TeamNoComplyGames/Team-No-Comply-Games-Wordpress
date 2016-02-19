@@ -52,3 +52,15 @@ function register_widgets(){
 
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
+
+
+
+//Adding custom post types to home
+add_filter( 'pre_get_posts', 'my_get_posts' );
+function my_get_posts( $query ) {
+
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post_type', array( 'post', 'screenshot' ) );
+
+	return $query;
+}
