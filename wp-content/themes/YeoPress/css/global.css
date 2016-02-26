@@ -3476,6 +3476,22 @@ input.button {
   font-size: 16px;
 }
 
+.button {
+  color: #313131;
+}
+
+.commentLabel {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.commentBox {
+  height: 250px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .center, .unityGame {
   margin-left: auto;
   margin-right: auto;

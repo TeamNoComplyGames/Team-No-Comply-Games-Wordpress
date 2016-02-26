@@ -50,14 +50,13 @@
 					<input type="text" name="url" id="input-url" value="<?= esc_attr($comment_author_url) ?>" />
 				</div>
 			<?php endif; ?>
-			<div class="input-wrap textarea<?= ($req) ? ' required' : ''?>">
-				<label for="input-comment">Message</label>
+			<div class="input-wrap center textarea<?= ($req) ? ' required' : ''?>">
+				<label for="input-comment" class = "commentLabel">Message</label>
 				<br />
-				<textarea name="comment" id="input-comment"></textarea>
-				<p class="caption">You can use these tags: <code><?= allowed_tags() ?></code></p>
+				<textarea name="comment" class = "commentBox" id="input-comment"></textarea>
 			</div>
-			<div class="input-wrap submit">
-				<input class="button" type="submit" value="Submit Comment" />
+			<div class="input-wrap center submit">
+				<input class="button center" type="submit" value="Submit Comment" />
 				<?php comment_id_fields() ?>
 			</div>
 			<?php do_action('comment_form', $post->ID) ?>
