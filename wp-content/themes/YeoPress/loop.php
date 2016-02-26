@@ -42,6 +42,37 @@
 					</div>
 				</article>
 
+			<?php elseif(get_post_type() == 'game'):?>
+
+				<!-- Games -->
+
+				<!-- Show the game info, followed by the iframe -->
+				<article id="article-<?php the_ID() ?>" class="article">
+					<header class="article-header">
+						<h1 class="article-title center">
+							<?php the_title() ?>
+						</h1>
+						<div class="article-info center">
+							<span class="date"><?php the_date('m-d-Y') ?></span>
+						</div>
+
+						<?php if (has_post_thumbnail()): ?>
+							<div class="featured-image center">
+								<?php the_post_thumbnail() ?>
+							</div>
+						<?php endif; ?>
+					</header>
+					<div class="article-content">
+						<?php the_content()?>
+					</div>
+				</article>
+
+
+				<iframe src="/cecs300/<?php echo types_render_field( "directory-name", array( ) ) ?>"
+				scrolling="no"
+				class="unityGame">
+				</iframe>
+
 
 			<?php else: ?>
 

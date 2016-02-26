@@ -12,7 +12,7 @@
 <?php if ($customPosts -> have_posts()):
 		while ($customPosts -> have_posts()) : $customPosts -> the_post() ?>
 
-		<!-- Show the game content -->
+		<!-- Show the game info, and omit the iframe -->
 		<article id="article-<?php the_ID() ?>" class="article">
 			<header class="article-header">
 				<h1 class="article-title center">
@@ -37,9 +37,6 @@
 				<?php the_content()?>
 			</div>
 		</article>
-
-		<!-- <iframe src="/cecs300/BushyWeb" scrolling="no" class="unityGame">
-		</iframe> -->
 	<hr />
 
 	<?php endwhile; ?>
