@@ -5,24 +5,15 @@
 
 <?php else: ?>
 
-	<?php
-
-	//Query for our custom posts
-	$customPosts = new WP_Query( array(
-		'post_type' => array('post', 'screenshot')
-	));
-
-	//If our query has posts
-	if ($customPosts -> have_posts()):
-
-		//While we have posts, grab a post
-		while ($customPosts -> have_posts()) : $customPosts -> the_post() ?>
+	<?php if (have_posts()):
+			while (have_posts()) : the_post() ?>
 
 			<?php if(get_post_type() == 'screenshot'):?>
 
 				<!-- Screenshots -->
 
 				<article id="article-<?php the_ID() ?>" class="article">
+
 					<header class="article-header">
 						<?php if (has_post_thumbnail() and !is_singular()): ?>
 							<div class="featured-image">
@@ -34,8 +25,13 @@
 							<span class="date"><?php the_date('m-d-Y') ?></span>
 						</div>
 					</header>
+
+
 					<div class="article-content">
-						<?php (is_single()) ? the_content() : the_excerpt() ?>
+
+						<!-- Display the screenshots here -->
+						
+
 					</div>
 				</article>
 
