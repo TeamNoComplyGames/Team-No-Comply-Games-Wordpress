@@ -1,6 +1,6 @@
 {
 	"wpVer": "4.4.1",
-	"url": "http://localhost/cecs300wp",
+	"url": "http://localhost",
 	"tablePrefix": "wp_",
 	"dbHost": "localhost",
 	"dbName": "cecs300db",

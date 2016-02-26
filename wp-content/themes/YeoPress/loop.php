@@ -22,7 +22,7 @@
 						<?php endif; ?>
 						<h1 class="article-title center"><?php if(!is_singular()): ?><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php endif; the_title() ?><?php if(!is_singular()): ?></a><?php endif; ?></h1>
 						<div class="article-info center">
-							<span class="date"><?php the_date('m-d-Y') ?></span>
+							<span class="date"><?php the_date('F j, Y') ?></span>
 						</div>
 					</header>
 
@@ -53,7 +53,7 @@
 							<?php the_title() ?>
 						</h1>
 						<div class="article-info center">
-							<span class="date"><?php the_date('m-d-Y') ?></span>
+							<span class="date"><?php the_date('F j, Y') ?></span>
 						</div>
 
 						<?php if (has_post_thumbnail()): ?>
@@ -68,7 +68,7 @@
 				</article>
 
 
-				<iframe src="/cecs300/<?php echo types_render_field( "directory-name", array( ) ) ?>"
+				<iframe src="/<?php echo types_render_field( "directory-name", array( ) ) ?>"
 				scrolling="no"
 				class="unityGame">
 				</iframe>
@@ -87,7 +87,7 @@
 						<?php endif; ?>
 						<h1 class="article-title center"><?php if(!is_singular()): ?><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php endif; the_title() ?><?php if(!is_singular()): ?></a><?php endif; ?></h1>
 						<div class="article-info center">
-							<span class="date"><?php the_date('m-d-Y') ?></span>
+							<span class="date"><?php the_date('F j, Y') ?></span>
 						</div>
 					</header>
 					<div class="article-content">

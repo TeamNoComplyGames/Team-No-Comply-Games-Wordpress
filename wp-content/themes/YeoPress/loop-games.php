@@ -24,7 +24,7 @@
 
 				</h1>
 				<div class="article-info center">
-					<span class="date"><?php the_date('m-d-Y') ?></span>
+					<span class="date"><?php the_date('F j, Y') ?></span>
 				</div>
 
 				<?php if (has_post_thumbnail()): ?>
