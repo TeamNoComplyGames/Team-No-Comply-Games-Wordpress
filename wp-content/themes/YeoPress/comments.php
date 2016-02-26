@@ -52,6 +52,7 @@
 			<?php endif; ?>
 			<div class="input-wrap textarea<?= ($req) ? ' required' : ''?>">
 				<label for="input-comment">Message</label>
+				<br />
 				<textarea name="comment" id="input-comment"></textarea>
 				<p class="caption">You can use these tags: <code><?= allowed_tags() ?></code></p>
 			</div>
