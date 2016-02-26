@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="page-content">
+<div id="page-content" class = "animated fadeIn">
 	<?php get_template_part('loop', 'single'); ?>
 	<?php comments_template(); ?>
 </div>

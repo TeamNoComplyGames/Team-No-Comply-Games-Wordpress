@@ -32,4 +32,4 @@
 			)) ?>
 		</header>
 		<div id="content-wrap"
-        class = "pageContent">
+        class = "contentWrap">
