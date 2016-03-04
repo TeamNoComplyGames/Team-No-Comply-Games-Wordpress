@@ -38,7 +38,12 @@
 				<?php the_content()?>
 			</div>
 		</article>
-	<hr />
+
+	<!-- Show horizontal divider if not the last post -->
+	<?php if ( custom_more_posts($customPosts) != 0 ) {
+		echo '<hr class="post-separator" />';
+	}
+	?>
 
 	<?php endwhile; ?>
 

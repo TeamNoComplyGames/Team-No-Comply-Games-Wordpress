@@ -113,9 +113,11 @@
 			<!--End the article tag -->
 			</article>
 
-
-		<hr />
-
+		<!-- Show horizontal divider if not the last post -->
+		<?php if ( more_posts() != 0 ) {
+    		echo '<hr class="post-separator" />';
+		}
+		?>
 
 		<?php endwhile; ?>
 

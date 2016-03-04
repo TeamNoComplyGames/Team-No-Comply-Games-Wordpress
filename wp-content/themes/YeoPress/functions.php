@@ -61,3 +61,14 @@ function my_get_posts( $query ) {
 		$query->set( 'post_type', array( 'post', 'screenshot', 'trailer' ) );
 	return $query;
 }
+
+//Finding how many posts are left in the global post query
+function more_posts() {
+  global $wp_query;
+  return $wp_query->current_post + 1 < $wp_query->post_count;
+}
+
+//Same as above, but for custom querys
+function custom_more_posts($customQuery) {
+  return $customQuery->current_post + 1 < $customQuery->post_count;
+}
