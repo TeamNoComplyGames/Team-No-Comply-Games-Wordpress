@@ -107,7 +107,7 @@
 
         display: block;
         text-align:center;
-        padding-left: none;
+        padding-left: 0px;
         width: 100%;
     }
 
@@ -122,9 +122,36 @@
     }
 }
 
+@media (max-width: 565px) {
+
+    //Our page Logo/header
+
+    //Our navbar
+    .menu-navbar-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .menu {
+
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                width: 40%;
+            }
+
+        }
+    }
+}
+
+
 .error {
     text-align: center;
 }
+
 
 .errorImage {
 
