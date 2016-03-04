@@ -2,6 +2,7 @@
 
 <!-- Create our games query -->
 <?php
+
 	//Query for our custom posts
 	$customPosts = new WP_Query( array(
 		'post_type' => array('game')
