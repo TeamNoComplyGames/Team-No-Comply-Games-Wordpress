@@ -3493,6 +3493,19 @@ input.button {
   margin-bottom: 10px;
 }
 
+.trailerVideo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.trailerVideo iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .commentBox {
   height: 250px;
   width: 80%;
