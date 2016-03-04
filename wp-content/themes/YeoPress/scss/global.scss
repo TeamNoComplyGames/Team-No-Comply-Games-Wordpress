@@ -17,7 +17,6 @@ button,
 input,
 select,
 textarea {
-	font-family: Arial, sans-serif;
 	color: $textColor;
 }
 body {
@@ -192,7 +191,7 @@ input.button:active {
 
 	//Removed the margin
 	margin: 0px 0px 12px !important;
-	padding-left: 7px; 
+	padding-left: 7px;
 
 	a {
 		color: $containerBg;
@@ -250,6 +249,7 @@ input.button:active {
 	background: $containerBg;
 }
 .article {
+	margin-top: 20px;
 	margin-bottom: $size_base;
 	border-bottom: 1px solid $borderShadows;
 }
@@ -406,4 +406,4 @@ input.button:active {
 /* ==========================================================================
 	No Comply Imports
 /* ========================================================================== */
-@import 'animate', 'nocomply';
+@import 'animate', 'nocomply', 'fonts';

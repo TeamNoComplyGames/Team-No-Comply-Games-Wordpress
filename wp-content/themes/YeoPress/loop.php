@@ -71,6 +71,15 @@
 
 						<!-- Display the trailer here -->
 						<div class = "trailerVideo">
+
+							<a href = "<?php
+							echo types_render_field("trailer-video",
+							array("output" => "raw"))
+							?>">
+								Video Link
+							</a>
+
+
 							<?php
 							echo types_render_field("trailer-video")
 							?>
