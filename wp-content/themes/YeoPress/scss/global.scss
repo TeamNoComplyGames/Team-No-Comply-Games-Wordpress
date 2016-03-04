@@ -20,6 +20,7 @@ textarea {
 	color: $textColor;
 }
 body {
+
 	height: 100%;
 	margin: 0;
 	font-size: $size_base;
@@ -37,12 +38,12 @@ body {
 	Links
 /* ========================================================================== */
 a {
-	color: $color_link;
+	color: $standard;
 	text-decoration: none !important
 }
 a:focus,
 a:hover {
-	color: lighten($color_link, 25%);
+	color: $linkColor;
 }
 a:focus {
 	outline: thin dotted;
@@ -187,17 +188,17 @@ input.button:active {
 }
 #page-logo {
 
-	color: $containerBg;
+	color: $standard;
 
 	//Removed the margin
 	margin: 0px 0px 12px !important;
 	padding-left: 7px;
 
 	a {
-		color: $containerBg;
+		color: $standard;
 
 		&:hover {
-			color: lighten($containerBg, 25%);
+			color: $linkColor;
 		}
 	}
 }
@@ -231,14 +232,14 @@ input.button:active {
 		}
 
 		a {
-			color: $containerBg;
+			color: $standard;
 			text-decoration: none;
 			font-size: $size_base * 1.5;
 			font-weight: bolder;
 		}
 
 		&:hover a {
-			color: lighten($containerBg, 25%);
+			color: $linkColor;
 		}
 	}
 }
@@ -251,12 +252,10 @@ input.button:active {
 .article {
 	margin-top: 20px;
 	margin-bottom: $size_base;
-	border-bottom: 1px solid $borderShadows;
 }
 .article-header {
 	margin-bottom: $size_base;
 	padding-bottom: $size_base;
-	border-bottom: 1px solid $borderShadows;
 }
 .article-title {
 	margin-bottom: 0;
@@ -315,8 +314,8 @@ input.button:active {
 #page-footer {
 	width: 90%;
 	float: left;
-	margin-left: 1em;
-	color: $containerBg;
+	margin-left: 2.5%;
+	color: $standard;
 	padding: $size_base 0;
 }
 

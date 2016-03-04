@@ -11,15 +11,24 @@ $theme_dir: '/<%= conf.get('contentDir') %>/themes/<%= conf.get('themeDir') %>/'
 $images_dir: '/<%= conf.get('contentDir') %>/themes/<%= conf.get('themeDir') %>/images/';
 
 /* Colors */
-$textColor: #ffffff;
-$color_link: #5a83cd;
-$borderShadows: #313131;
-$bodyBg: #ffffff;
-$containerBg: #313131;
-$sidebarBg: #5a5a5a;
+$standard: #313131;
+$twilight: #5a5a5a;
+$inverseStandard: #f2f2f2;
+$inverse: #ffffff;
+$linkColor: #5a83cd;
+
+//Style default variables
+$bodyBg: $inverse;
+$containerBg: $inverseStandard;
+$textColor: $standard;
+$borderShadows: $standard;
+$sidebarBg: $twilight;
 $oldBrowserBgStart: #7352e6;
 $oldBrowserBgEnd: #4129b4;
-$standard: #313131;
+$color_link: $linkColor;
 
 /* Font Sizes */
 $size_base: 1em;
+
+//Media Qurie size
+$mediaSize: 1530px;

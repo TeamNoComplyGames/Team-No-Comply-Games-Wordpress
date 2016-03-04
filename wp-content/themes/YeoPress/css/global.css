@@ -8,6 +8,7 @@
 /* Colors */
 /* Font Sizes */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 article,
 aside,
 details,
@@ -64,8 +65,8 @@ dfn {
 }
 
 mark {
-  background: #313131;
-  color: #ffffff;
+  background: #f2f2f2;
+  color: #313131;
 }
 
 code,
@@ -173,7 +174,7 @@ img {
 
   pre,
   blockquote {
-    border: 1px solid #ffffff;
+    border: 1px solid #313131;
     page-break-inside: avoid;
   }
 
@@ -226,7 +227,7 @@ button,
 input,
 select,
 textarea {
-  color: #ffffff;
+  color: #313131;
 }
 
 body {
@@ -248,13 +249,13 @@ body {
 	Links
 /* ========================================================================== */
 a {
-  color: #5a83cd;
+  color: #313131;
   text-decoration: none !important;
 }
 
 a:focus,
 a:hover {
-  color: #bccdeb;
+  color: #5a83cd;
 }
 
 a:focus {
@@ -316,14 +317,14 @@ ul {
 
 /* Selection Colors */
 ::-moz-selection {
-  background: #ffffff;
-  color: #313131;
+  background: #313131;
+  color: #f2f2f2;
   text-shadow: none;
 }
 
 ::selection {
-  background: #ffffff;
-  color: #313131;
+  background: #313131;
+  color: #f2f2f2;
   text-shadow: none;
 }
 
@@ -394,7 +395,7 @@ input.button {
   color: #313131;
 }
 #page-logo a:hover {
-  color: #717171;
+  color: #5a83cd;
 }
 
 #page-header ul {
@@ -417,25 +418,23 @@ input.button {
   font-weight: bolder;
 }
 #page-header ul li:hover a {
-  color: #717171;
+  color: #5a83cd;
 }
 
 /* Content */
 #content-wrap {
   padding: 1em;
-  background: #313131;
+  background: #f2f2f2;
 }
 
 .article {
   margin-top: 20px;
   margin-bottom: 1em;
-  border-bottom: 1px solid #313131;
 }
 
 .article-header {
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid #313131;
 }
 
 .article-title {
@@ -490,7 +489,7 @@ input.button {
 #page-footer {
   width: 90%;
   float: left;
-  margin-left: 1em;
+  margin-left: 2.5%;
   color: #313131;
   padding: 1em 0;
 }
@@ -577,27 +576,30 @@ input.button {
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated {
+.animated, .contentWrap {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.animated.infinite {
+.animated.infinite, .infinite.contentWrap {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-.animated.hinge {
+.animated.hinge, .hinge.contentWrap {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-.animated.flipOutX,
+.animated.flipOutX, .flipOutX.contentWrap,
 .animated.flipOutY,
+.flipOutY.contentWrap,
 .animated.bounceIn,
-.animated.bounceOut {
+.bounceIn.contentWrap,
+.animated.bounceOut,
+.bounceOut.contentWrap {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
@@ -1610,7 +1612,7 @@ input.button {
     opacity: 1;
   }
 }
-.fadeIn {
+.fadeIn, .contentWrap {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -2132,7 +2134,7 @@ input.button {
     animation-timing-function: ease-in;
   }
 }
-.animated.flip {
+.animated.flip, .flip.contentWrap {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -3460,27 +3462,65 @@ input.button {
   animation-name: slideOutUp;
 }
 
+/*********************************
+*
+*
+    General Fields / Page layout
+*
+*
+*********************************/
 #page-content, .contentWrap {
   overflow: hidden !important;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  padding: 10px !important;
+  padding: 10px 25px !important;
 }
 
 .contentWrap {
-  width: 95%;
+  width: 80%;
   float: none !important;
   box-shadow: 0px 1px 7px 1px #313131;
 }
 
+#page-header {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: none !important;
+}
+
+@media (max-width: 1530px) {
+  .contentWrap {
+    overflow: hidden !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 10px 25px !important;
+    width: 95%;
+    float: none !important;
+    box-shadow: 0px 1px 7px 1px #313131;
+  }
+
+  #page-header {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: none !important;
+  }
+}
+@media (min-width: 1530px) {
+  #page-footer {
+    margin-left: 10% !important;
+  }
+}
 #page-logo {
   display: inline;
   text-align: left;
   padding-left: 20px;
   float: left;
-  width: 500px;
+  width: 630px;
 }
 
 .menu-navbar-container {
@@ -3495,7 +3535,7 @@ input.button {
   padding: 10px 10px !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1530px) {
   #page-logo {
     display: block;
     text-align: center;
@@ -3511,6 +3551,27 @@ input.button {
     margin-right: auto;
   }
 }
+.error {
+  text-align: center;
+}
+
+.errorImage {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.errorImage img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*********************************
+*
+*
+    Specific Fields
+*
+*
+*********************************/
 .date {
   font-size: 16px;
 }
@@ -3602,9 +3663,41 @@ input.button {
   border: none !important;
 }
 
+/*********************************
+*
+*
+    Transition Animations
+*
+*
+*********************************/
+a {
+  font-weight: bolder;
+  transition: color 0.5s;
+}
+a:hover {
+  transition: color 0.5s;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
+}
+
+#page-logo {
+  font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+}
+#page-logo span {
+  line-height: 2.35;
+}
+#page-logo a {
+  line-height: 2.35;
+}
+
+.error {
+  font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  line-height: 2.35;
 }
 
 /*# sourceMappingURL=global.css.map */

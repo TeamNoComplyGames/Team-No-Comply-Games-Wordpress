@@ -1,33 +1,84 @@
 
-//Animated fields
-#page-content {
-    overflow: hidden !important;
+/*********************************
+*
+*
+    General Fields / Page layout
+*
+*
+*********************************/
+.contentWrap {
 
+    @extend .animated;
+    @extend .fadeIn;
+}
+
+#page-content {
+
+    overflow: hidden !important;
     width: 100%;
 
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
 
-    padding: 10px !important;
+    padding: 10px 25px!important;
 }
 
 .contentWrap {
     @extend #page-content;
 
-    width: 95%;
+    width: 80%;
     float: none !important;
     box-shadow: 0px 1px 7px 1px $borderShadows;
 }
 
 //Our page Logo/header
+#page-header {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: none !important;
+}
+
+//Different Layout for mobile
+@media (max-width: $mediaSize) {
+
+    .contentWrap {
+        overflow: hidden !important;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+
+        padding: 10px 25px!important;
+
+        width: 95%;
+        float: none !important;
+        box-shadow: 0px 1px 7px 1px $borderShadows;
+    }
+
+    //Our page Logo/header
+    #page-header {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: none !important;
+    }
+}
+
+@media (min-width: $mediaSize) {
+
+    #page-footer {
+        margin-left: 10% !important;
+    }
+}
+
 #page-logo {
 
     display: inline;
     text-align: left;
     padding-left: 20px;
     float: left;
-    width: 500px;
+    width: 630px;
 }
 
 //Our navbar
@@ -49,8 +100,7 @@
 }
 
 //Different navbar for mobile/tablets
-
-@media (max-width: 1000px) {
+@media (max-width: $mediaSize) {
 
     //Our page Logo/header
     #page-logo {
@@ -72,7 +122,37 @@
     }
 }
 
-//Our dates
+.error {
+    text-align: center;
+}
+
+.errorImage {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/*********************************
+*
+*
+    Specific Fields
+*
+*
+*********************************/
 .date {
 
     font-size: 16px;
@@ -181,4 +261,23 @@
     width: 100%;
     height: 900px;
     border: none !important;
+}
+
+
+
+/*********************************
+*
+*
+    Transition Animations
+*
+*
+*********************************/
+a {
+
+    font-weight: bolder;
+    transition: color 0.5s;
+
+    &:hover {
+        transition: color 0.5s;
+    }
 }

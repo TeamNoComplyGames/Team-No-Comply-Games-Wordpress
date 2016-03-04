@@ -1,8 +1,32 @@
 
 //Import the fonts
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
+//General Font
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
+}
+
+//Title Font
+#page-logo {
+
+    font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+
+    span {
+        line-height: 2.35;
+    }
+
+    a {
+        line-height: 2.35;
+    }
+}
+
+.error {
+
+    font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    line-height: 2.35;
 }
