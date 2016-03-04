@@ -1,3 +1,7 @@
+
+<!-- Add a nice little horizontal divider for comments -->
+<hr />
+
 <?php if (!empty($_SERVER['SCRIPT_FILENAME']) and 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) die ('Please do not load this page directly. Thanks!'); ?>
 <?php if (post_password_required()): ?>
 	This post is password protected. Enter the password to view comments.
