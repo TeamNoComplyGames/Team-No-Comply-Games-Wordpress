@@ -77,7 +77,12 @@ And then you restart the 'grunt' command, it should now be livereloading!
 
 So requirejs tasks wont be working as mentioned by: https://github.com/pudgereyem/wp-theme-framework-1/blob/master/README%20Yeopress.md
 
-The path will be incorrect, so navigate to js/globals.js. And change the JQuery path, to: 
+The path will be incorrect, so navigate to js/globals.js. 
+
+Change the base config path to your current directory(The whole <%> thingy doesnt work on the site, only building), e.g:
+`baseUrl: "wp-content/themes/YeoPress/js",`
+
+And change the JQuery path, to: 
 `jquery: "vendor/jquery/dist/jquery"`
 
 And you're good!
