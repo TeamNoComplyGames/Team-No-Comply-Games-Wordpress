@@ -52,12 +52,14 @@
 						<?php (is_single()) ? the_content() : the_excerpt() ?>
 
 						<!-- Display the screenshots here -->
-						<?php
-						echo types_render_field( "screenshot-image",
-						array( "alt" => "Screenshot",
-						"class" => "screenShot",
-						"proportional" => "true" ) )
-						?>
+						<div class = "screenShotContainer">
+							<?php
+							echo types_render_field( "screenshot-image",
+							array( "alt" => "Screenshot",
+							"class" => "screenShot",
+							"proportional" => "true" ) )
+							?>
+						</div>
 
 					</div>
 
