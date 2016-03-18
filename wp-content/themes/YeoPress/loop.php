@@ -98,6 +98,15 @@
 					<div class="article-content">
 						<?php the_content()?>
 
+						<!-- Show the controls -->
+						<h3 class = "center">Controls</h3>
+
+						<div class = "center">
+							<?php
+							echo types_render_field("game-controls")
+							?>
+						</div>
+
 						<iframe src="/<?php echo types_render_field( "directory-name", array( ) ) ?>"
 						scrolling="no"
 						class="unityGame">
