@@ -3693,6 +3693,27 @@ a {
 a:hover {
   transition: color 0.5s;
 }
+a img {
+  opacity: 1.0;
+  transition: opacity 0.5s;
+}
+a img:hover {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+/*********************************
+*
+*
+    Random Wordpress fixes
+*
+*
+*********************************/
+article img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
