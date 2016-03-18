@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;;kCAMkC;AAO1B,uBAAc;EACV,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI",
+"sources": ["../../scss/nocomply/wordpressFix.scss"],
+"names": [],
+"file": "wordpressFix.css"
+}

@@ -1,10 +1,6 @@
 require.config({
-	baseUrl: "<%= conf.get(\'contentDir\') %>/themes/<%= conf.get(\'themeDir\') %>/js",
+	baseUrl: "wp-content/themes/YeoPress/js",
 	paths: {
-		jquery: "../../../../js/vendor/jquery/jquery"
+		jquery: "vendor/jquery/dist/jquery"
 	}
-});
-
-require(['jquery'], function($) {
-	console.log('Working!!');
 });

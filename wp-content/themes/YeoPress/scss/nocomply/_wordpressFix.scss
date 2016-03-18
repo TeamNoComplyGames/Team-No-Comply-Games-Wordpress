@@ -1,0 +1,21 @@
+/*********************************
+*
+*
+    Random Wordpress fixes
+*
+*
+*********************************/
+
+//Get article images to display centered
+article {
+
+    img {
+
+        &.aligncenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
