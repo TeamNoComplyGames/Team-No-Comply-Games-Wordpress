@@ -72,6 +72,16 @@ And then you restart the 'grunt' command, it should now be livereloading!
 
 **Final Thoughts** This is just a personal guide for me, but I am open to any pull requests and things, and much thanks to the devs at yeopress, and digital ocean! 
 
+
+##RequireJS
+
+So requirejs tasks wont be working as mentioned by: https://github.com/pudgereyem/wp-theme-framework-1/blob/master/README%20Yeopress.md
+
+The path will be incorrect, so navigate to js/globals.js. And change the JQuery path, to: 
+`jquery: "vendor/jquery/dist/jquery"`
+
+And you're good!
+
 ## License
 
 Licensed under the [Apache License 2.0](http://choosealicense.com/licenses/apache-2.0/)
