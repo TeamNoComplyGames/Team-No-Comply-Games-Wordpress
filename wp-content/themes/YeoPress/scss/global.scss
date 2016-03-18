@@ -38,12 +38,11 @@ body {
 	Links
 /* ========================================================================== */
 a {
-	color: $standard;
-	text-decoration: none !important
+	color: $linkColor;
 }
 a:focus,
 a:hover {
-	color: $linkColor;
+	color: $linkHover;
 }
 a:focus {
 	outline: thin dotted;
@@ -396,7 +395,7 @@ input.button:active {
 
 	}
 	.search-form {
-		
+
 	}
 }
 

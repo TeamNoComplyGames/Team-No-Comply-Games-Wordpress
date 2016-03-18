@@ -2984,6 +2984,13 @@ body {
   padding-left: 20px;
   float: left;
   width: 630px;
+  color: #313131;
+}
+#page-logo a {
+  color: #313131;
+}
+#page-logo a:hover {
+  color: #4a9cee;
 }
 
 .menu-navbar-container {
@@ -2991,6 +2998,12 @@ body {
   justify-content: flex-end;
   margin-left: 500px;
   margin-right: 20px;
+}
+.menu-navbar-container a {
+  color: #313131;
+}
+.menu-navbar-container a:hover {
+  color: #4a9cee;
 }
 .menu-navbar-container .menu li {
   font-weight: lighter;
