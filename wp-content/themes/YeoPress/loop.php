@@ -49,7 +49,7 @@
 					<div class="article-content">
 
 						<!-- The editor content -->
-						<?php (is_single()) ? the_content() : the_excerpt() ?>
+						<?php the_content()?>
 
 						<!-- Display the screenshots here -->
 						<div class = "screenShotContainer">
@@ -69,7 +69,7 @@
 					<div class="article-content">
 
 						<!-- The editor content -->
-						<?php (is_single()) ? the_content() : the_excerpt() ?>
+						<?php the_content()?>
 
 						<!-- Display the trailer here -->
 						<div class = "trailerVideo">
@@ -116,7 +116,7 @@
 			<!-- Default post -->
 			<?php else: ?>
 				<div class="article-content">
-					<?php (is_single()) ? the_content() : the_excerpt() ?>
+					<?php the_content()?>
 				</div>
 
 			<?php  endif; ?>
