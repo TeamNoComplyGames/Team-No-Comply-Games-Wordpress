@@ -34,6 +34,16 @@
 					</div>
 				<?php endif; ?>
 			</header>
+
+			<!-- Game Header Image -->
+			<div class = "center">
+				<a href="<?php the_permalink() ?>">
+				<?php
+				echo types_render_field("game-screenshot")
+				?>
+				</a>
+			</div>
+
 			<div class="article-content">
 				<?php the_content()?>
 			</div>

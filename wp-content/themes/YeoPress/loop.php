@@ -49,15 +49,17 @@
 					<div class="article-content">
 
 						<!-- The editor content -->
-						<?php (is_single()) ? the_content() : the_excerpt() ?>
+						<?php the_content()?>
 
 						<!-- Display the screenshots here -->
-						<?php
-						echo types_render_field( "screenshot-image",
-						array( "alt" => "Screenshot",
-						"class" => "screenShot",
-						"proportional" => "true" ) )
-						?>
+						<div class = "screenShotContainer">
+							<?php
+							echo types_render_field( "screenshot-image",
+							array( "alt" => "Screenshot",
+							"class" => "screenShot",
+							"proportional" => "true" ) )
+							?>
+						</div>
 
 					</div>
 
@@ -67,7 +69,7 @@
 					<div class="article-content">
 
 						<!-- The editor content -->
-						<?php (is_single()) ? the_content() : the_excerpt() ?>
+						<?php the_content()?>
 
 						<!-- Display the trailer here -->
 						<div class = "trailerVideo">
@@ -96,6 +98,15 @@
 					<div class="article-content">
 						<?php the_content()?>
 
+						<!-- Show the controls -->
+						<h3 class = "center">Controls</h3>
+
+						<div class = "center">
+							<?php
+							echo types_render_field("game-controls")
+							?>
+						</div>
+
 						<iframe src="/<?php echo types_render_field( "directory-name", array( ) ) ?>"
 						scrolling="no"
 						class="unityGame">
@@ -105,7 +116,7 @@
 			<!-- Default post -->
 			<?php else: ?>
 				<div class="article-content">
-					<?php (is_single()) ? the_content() : the_excerpt() ?>
+					<?php the_content()?>
 				</div>
 
 			<?php  endif; ?>

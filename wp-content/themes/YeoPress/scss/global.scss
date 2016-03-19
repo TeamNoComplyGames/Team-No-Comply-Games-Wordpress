@@ -37,13 +37,19 @@ body {
 /* ==========================================================================
 	Links
 /* ========================================================================== */
+p {
+	a {
+		font-size: 24px;
+	}
+}
+
 a {
-	color: $standard;
-	text-decoration: none !important
+	color: $linkColor;
+	text-decoration: none;
 }
 a:focus,
 a:hover {
-	color: $linkColor;
+	color: $linkHover;
 }
 a:focus {
 	outline: thin dotted;
@@ -396,7 +402,7 @@ input.button:active {
 
 	}
 	.search-form {
-		
+
 	}
 }
 

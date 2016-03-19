@@ -79,6 +79,15 @@
     padding-left: 20px;
     float: left;
     width: 630px;
+    color: $standard;
+
+    a {
+        color: $standard;
+
+        &:hover {
+            color: $linkHover;
+        }
+    }
 }
 
 //Our navbar
@@ -88,6 +97,14 @@
     justify-content: flex-end;
     margin-left: 500px;
     margin-right: 20px;
+
+    a {
+        color: $standard;
+
+        &:hover {
+            color: $linkHover;
+        }
+    }
 
     .menu {
 
