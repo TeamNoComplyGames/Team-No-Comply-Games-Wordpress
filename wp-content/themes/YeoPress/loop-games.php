@@ -36,7 +36,7 @@
 			</header>
 
 			<!-- Game Header Image -->
-			<div class = "center">
+			<div class = "center gameHeader">
 				<a href="<?php the_permalink() ?>">
 				<?php
 				echo types_render_field("game-screenshot")
