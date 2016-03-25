@@ -7,7 +7,7 @@
 *********************************/
 .date {
 
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .button {
@@ -16,7 +16,7 @@
 
 .commentLabel {
 
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bolder;
 }
 
@@ -42,7 +42,6 @@
         display: none;
         text-align: center;
         width: 100%;
-        font-size: 26px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 15px;
@@ -74,7 +73,6 @@
             display: block;
             text-align: center;
             width: 100%;
-            font-size: 26px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 15px;
@@ -130,14 +128,38 @@
     display: flex;
     justify-content: center;
     align-content: space-around;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
 
     img {
-        max-width: 90%;
-        max-height: 500px;
+        height: 100%;
+        max-height: 400px;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+//Screenshots for mobile/tablets
+@media (max-width: 799px) {
+
+    .screenShotContainer {
+
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+
+        img {
+            height: 100%;
+            max-height: 400px;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }
 
