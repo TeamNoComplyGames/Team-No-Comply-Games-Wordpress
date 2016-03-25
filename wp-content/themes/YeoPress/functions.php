@@ -10,12 +10,9 @@ function theme_enqueue_scripts(){
 
 	wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
 	wp_enqueue_script('global');
-
-	/*
-	No Livereload for production
+	
 	wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
 	wp_enqueue_script('livereload');
-	*/
 
 	//Grab our optimized javascript
 	wp_register_script('optimized', get_bloginfo('template_url') . '/js/optimized.min.js', array(), false, true);
