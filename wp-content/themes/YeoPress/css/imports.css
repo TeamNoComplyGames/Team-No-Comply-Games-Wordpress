@@ -2899,24 +2899,56 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
 }
 
 #page-logo {
   font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
-  font-size: 30px;
 }
 #page-logo span {
   line-height: 2.35;
+  font-size: 29.976px;
 }
 #page-logo a {
   line-height: 2.35;
+  font-size: 29.976px;
 }
 
 .error {
   font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
-  font-size: 30px;
   line-height: 2.35;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 14.88px;
+}
+
+h4 {
+  font-size: 17.82px;
+}
+
+h3 {
+  font-size: 20.952px;
+}
+
+h2 {
+  font-size: 25.848px;
+}
+
+h1 {
+  font-size: 29.976px;
+}
+
+body, p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  font-size: 18px;
 }
 
 /* ==========================================================================
@@ -2938,10 +2970,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  padding: 10px 25px !important;
+  padding: 0px !important;
 }
 
 .contentWrap {
+  padding: 15px !important;
   width: 80%;
   float: none !important;
   box-shadow: 0px 1px 7px 1px #313131;
@@ -2951,7 +2984,7 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding: none !important;
+  padding: 0px !important;
 }
 
 @media (max-width: 1530px) {
@@ -2960,7 +2993,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    padding: 10px 25px !important;
+    padding: 15px !important;
     width: 95%;
     float: none !important;
     box-shadow: 0px 1px 7px 1px #313131;
@@ -2970,7 +3003,7 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    padding: none !important;
+    padding: 0px !important;
   }
 }
 @media (min-width: 1530px) {
@@ -2998,17 +3031,27 @@ body {
   justify-content: flex-end;
   margin-left: 500px;
   margin-right: 20px;
+  margin-top: 12px;
 }
 .menu-navbar-container a {
   color: #313131;
+  font-size: 26.868px;
 }
 .menu-navbar-container a:hover {
   color: #4a9cee;
 }
+.menu-navbar-container .menu {
+  margin-top: 10px;
+}
 .menu-navbar-container .menu li {
   font-weight: lighter;
+  font-size: 26.868px;
   text-align: center;
-  padding: 10px 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 85px !important;
 }
 
 @media (max-width: 1530px) {
@@ -3017,6 +3060,7 @@ body {
     text-align: center;
     padding-left: 0px;
     width: 100%;
+    margin-bottom: 0px !important;
   }
 
   .menu-navbar-container {
@@ -3025,22 +3069,39 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media (max-width: 565px) {
-  .menu-navbar-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0px;
   }
   .menu-navbar-container .menu {
+    margin-top: 0px;
+    margin-bottom: 10px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .menu-navbar-container .menu li {
-    width: 40%;
+}
+@media (max-width: 565px) {
+  #page-logo {
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+    width: 100%;
+    margin-bottom: 0px !important;
+  }
+
+  .menu-navbar-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .menu-navbar-container .menu {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .error {
@@ -3065,7 +3126,7 @@ body {
 *
 *********************************/
 .date {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .button {
@@ -3073,7 +3134,7 @@ body {
 }
 
 .commentLabel {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bolder;
 }
 
@@ -3096,7 +3157,6 @@ body {
   display: none;
   text-align: center;
   width: 100%;
-  font-size: 26px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
@@ -3122,7 +3182,6 @@ body {
     display: block;
     text-align: center;
     width: 100%;
-    font-size: 26px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;

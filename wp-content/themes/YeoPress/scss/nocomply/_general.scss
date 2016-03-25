@@ -21,12 +21,13 @@
     margin-right: auto;
     border-radius: 5px;
 
-    padding: 10px 25px!important;
+    padding: 0px !important;
 }
 
 .contentWrap {
     @extend #page-content;
 
+    padding: 15px !important;
     width: 80%;
     float: none !important;
     box-shadow: 0px 1px 7px 1px $borderShadows;
@@ -37,7 +38,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: none !important;
+    padding: 0px !important;
 }
 
 //Different Layout for mobile
@@ -49,7 +50,7 @@
         margin-right: auto;
         border-radius: 5px;
 
-        padding: 10px 25px!important;
+        padding: 15px !important;
 
         width: 95%;
         float: none !important;
@@ -61,7 +62,7 @@
         width: 95%;
         margin-left: auto;
         margin-right: auto;
-        padding: none !important;
+        padding: 0px !important;
     }
 }
 
@@ -97,9 +98,11 @@
     justify-content: flex-end;
     margin-left: 500px;
     margin-right: 20px;
+    margin-top: 12px;
 
     a {
         color: $standard;
+        font-size:  unquote(($baseFont * 2.239) + 'px');
 
         &:hover {
             color: $linkHover;
@@ -107,11 +110,17 @@
     }
 
     .menu {
+        margin-top: 10px;
 
         li {
             font-weight: lighter;
+            font-size:  unquote(($baseFont * 2.239) + 'px');
             text-align: center;
-            padding: 10px 10px !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            width: 85px !important;
         }
     }
 }
@@ -126,6 +135,7 @@
         text-align:center;
         padding-left: 0px;
         width: 100%;
+        margin-bottom: 0px !important;
     }
 
     //Our navbar
@@ -136,30 +146,46 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0px;
+
+        .menu {
+
+            margin-top: 0px;
+            margin-bottom: 10px;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }
 
 @media (max-width: 565px) {
 
     //Our page Logo/header
+    #page-logo {
+
+        display: block;
+        text-align:center;
+        padding-left: 0px;
+        width: 100%;
+        margin-bottom: 0px !important;
+    }
 
     //Our navbar
     .menu-navbar-container {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0px;
 
         .menu {
-
+            margin-top: 0px;
+            margin-bottom: 10px;
             display: flex;
             width: 100%;
             flex-wrap: wrap;
             justify-content: center;
-
-            li {
-                width: 40%;
-            }
-
         }
     }
 }

@@ -3,30 +3,71 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
+//Our base font size
+$baseFont: 12;
+
 //General Font
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
 }
 
 //Title Font
 #page-logo {
 
     font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
-    font-size: 30px;
 
     span {
         line-height: 2.35;
+        font-size:  unquote(($baseFont * 2.498) + 'px');
     }
 
     a {
         line-height: 2.35;
+        font-size:  unquote(($baseFont * 2.498) + 'px');
     }
 }
 
 .error {
 
     font-family: 'Press Start 2P', 'Source Sans Pro', sans-serif;
-    font-size: 30px;
     line-height: 2.35;
+}
+
+
+//Sizes for our text
+//Simply adjust our font size here
+
+h6 {
+    font-size:  unquote(($baseFont) + 'px');
+}
+
+h5 {
+    font-size:  unquote(($baseFont * 1.24) + 'px');
+}
+
+h4 {
+    font-size:  unquote(($baseFont * 1.485) + 'px');
+}
+
+h3 {
+    font-size:  unquote(($baseFont * 1.746) + 'px');
+}
+
+h2 {
+    font-size:  unquote(($baseFont * 2.154) + 'px');
+}
+
+h1 {
+    font-size:  unquote(($baseFont * 2.498) + 'px');
+}
+
+
+//Some default font sizes
+body, p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    font-size: 18px;
 }
