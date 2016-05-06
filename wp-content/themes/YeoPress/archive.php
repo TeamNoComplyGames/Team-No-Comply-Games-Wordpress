@@ -3,11 +3,38 @@
 	<?php if (have_posts()) : ?>
 		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 		<?php if (is_category()): ?>
-			<h2>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>
+
+			<h2>
+				<?php
+					_e("Archive for the ");
+				?>
+				&#8216;
+				<?php single_cat_title(); ?>
+				&#8217;
+				<?php
+					_e("Category");
+				?>
+			</h2>
+
 		<?php elseif(is_tag()): ?>
-			<h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
+
+			<h2>
+				<?php
+					_e("Posts Tagged ");
+				?>
+				&#8216;
+				<?php single_tag_title(); ?>
+				&#8217;
+			</h2>
+
 		<?php elseif (is_day()): ?>
-			<h2>Archive for <?php the_time('F jS, Y'); ?></h2>
+
+			<h2>
+				<?php
+					_e("Archive for ");
+				?>
+				<?php the_time('F jS, Y'); ?>
+			</h2>
 		<?php elseif (is_month()): ?>
 			<h2>Archive for <?php the_time('F, Y'); ?></h2>
 		<?php elseif (is_year()): ?>

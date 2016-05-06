@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 	<div id="page-content">
-		<h1 class = "error">Error 404. Try blowing the cartridge?</h1>
+		<h1 class = "error">
+
+			<?php
+				_e("Error 404. Try blowing the cartridge?"); 
+			?>
+
+		</h1>
 
 		<!-- funny image -->
 		<div class = "errorImage">
