@@ -1,6 +1,10 @@
 <form action="<?php bloginfo('siteurl'); ?>" class="search-form">
     <div class="input-wrap search">
-        <label for="input-s" class="screen-reader-text">Search for:</label>
+        <label for="input-s" class="screen-reader-text">
+            <?php
+    			_e("Search for:");
+    		?>
+        </label>
         <input type="search" id="input-s" name="s" />
     </div>
     <div class="input-wrap submit">

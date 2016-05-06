@@ -58,5 +58,9 @@
 	<?php endwhile; ?>
 
 <?php else: ?>
-	<p>Nothing matches your query.</p>
+	<p>
+		<?php
+			_e("Nothing Matches your query.");
+		?>
+	</p>
 <?php  endif; ?>

@@ -78,7 +78,9 @@
 							echo types_render_field("trailer-video",
 							array("output" => "raw"))
 							?>">
-								Video Link
+								<?php
+									_e("Cideo Link");
+								?>
 							</a>
 
 
@@ -133,6 +135,10 @@
 		<?php endwhile; ?>
 
 	<?php else: ?>
-		<p>Nothing matches your query.</p>
+		<p>
+			<?php
+				_e("Nothing Matches your query.");
+			?>
+		</p>
 	<?php  endif; ?>
 <?php  endif; ?>

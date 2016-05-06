@@ -4,7 +4,9 @@
 
 <?php if (!empty($_SERVER['SCRIPT_FILENAME']) and 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) die ('Please do not load this page directly. Thanks!'); ?>
 <?php if (post_password_required()): ?>
-	This post is password protected. Enter the password to view comments.
+	<?php
+		_e("This post is password protected. Enter the password to view comments.");
+	?>
 <?php endif; ?>
 
 <?php if (have_comments()): ?>
@@ -22,9 +24,17 @@
 	</div>
  <?php else: // this is displayed if there are no comments so far ?>
 	<?php if (comments_open()): ?>
-		<p>No comments so far.</p>
+		<p>
+			<?php
+				_e("No comments so far.");
+			?>
+		</p>
 	 <?php else: // comments are closed ?>
-		<p>Comments are closed.</p>
+		<p>
+			<?php
+				_e("Comments are closed.");
+			?>
+		</p>
 	<?php endif; ?>
 <?php endif; ?>
 
@@ -35,27 +45,59 @@
 			<?php cancel_comment_reply_link() ?>
 		</div>
 		<?php if (get_option('comment_registration') and !is_user_logged_in()): ?>
-			<p>You must be <a href="<?= wp_login_url(get_permalink()) ?>">logged in</a> to post a comment.</p>
+			<p>
+				<?php
+					_e("You must be ");
+				?>
+				<a href="<?= wp_login_url(get_permalink()) ?>">
+					<?php
+						_e("logged in");
+					?>
+				</a>
+				<?php
+					_e(" to post a comment.");
+				?>
+			</p>
 		<?php else: ?>
 		<form action="<?= get_option('siteurl') ?>/wp-comments-post.php" method="post" class="comment-form">
 			<?php if (is_user_logged_in()): ?>
-				<p>Logged in as <a href="<?= get_option('siteurl') ?>/wp-admin/profile.php"><?= $user_identity ?></a>. <a href="<?= wp_logout_url(get_permalink()) ?>" title="Log out of this account">Log out &raquo;</a></p>
+				<p>Logged in as <a href="<?= get_option('siteurl') ?>/wp-admin/profile.php"><?= $user_identity ?></a>. <a href="<?= wp_logout_url(get_permalink()) ?>" title="Log out of this account">
+					<?php
+						_e(" Log out ");
+					?>
+					&raquo;</a></p>
 			<?php else : ?>
 				<div class="input-wrap text<?= ($req) ? ' required' : ''?>">
-					<label for="input-author">Name</label>
+					<label for="input-author">
+						<?php
+							_e("Name");
+						?>
+					</label>
 					<input type="text" name="author" id="input-author" value="<?= esc_attr($comment_author) ?>"<?= ($req) ? ' aria-required="true"' : '' ?> />
 				</div>
 				<div class="input-wrap text<?= ($req) ? ' required' : ''?>">
-					<label for="input-email">Mail (will not be published)</label>
+					<label for="input-email">
+						<?php
+							_e("Mail (Will not be published)");
+						?>
+					</label>
 					<input type="text" name="email" id="input-email" value="<?= esc_attr($comment_author_email) ?>"<?= ($req) ? ' aria-required="true"' : '' ?> />
 				</div>
 				<div class="input-wrap text<?= ($req) ? ' required' : ''?>">
-					<label for="input-url">Website</label>
+					<label for="input-url">
+						<?php
+							_e("Website");
+						?>
+					</label>
 					<input type="text" name="url" id="input-url" value="<?= esc_attr($comment_author_url) ?>" />
 				</div>
 			<?php endif; ?>
 			<div class="input-wrap center textarea<?= ($req) ? ' required' : ''?>">
-				<label for="input-comment" class = "commentLabel">Message</label>
+				<label for="input-comment" class = "commentLabel">
+					<?php
+						_e("Message");
+					?>
+				</label>
 				<br />
 				<textarea name="comment" class = "commentBox" id="input-comment"></textarea>
 			</div>
