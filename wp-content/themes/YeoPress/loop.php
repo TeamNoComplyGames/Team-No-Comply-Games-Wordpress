@@ -79,7 +79,7 @@
 							array("output" => "raw"))
 							?>">
 								<?php
-									_e("Cideo Link");
+									_e("Video Link");
 								?>
 							</a>
 
