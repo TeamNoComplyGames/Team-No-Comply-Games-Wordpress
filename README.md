@@ -2,6 +2,8 @@
 
 Made with [Yeopress](https://github.com/wesleytodd/YeoPress)
 
+![Site Screenshot](https://nocomplygames.com/wp-content/uploads/2016/05/Screenshot-from-2016-05-06-14-08-41.png)
+
 ##How to get started with Yeopress
 
 So I had a bit of trouble getting started using Yeopress, so here's what I did to get your own server started, and possibly git clone this repo.
