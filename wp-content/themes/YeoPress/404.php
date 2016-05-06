@@ -3,14 +3,14 @@
 		<h1 class = "error">
 
 			<?php
-				_e("Error 404. Try blowing the cartridge?"); 
+				_e("Error 404. Try blowing the cartridge?");
 			?>
 
 		</h1>
 
 		<!-- funny image -->
 		<div class = "errorImage">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/4/48/SNES-SFAM-Cartridges.jpg"
+			<img src="https://nocomplygames.com/wp-content/uploads/2016/05/SNES-SFAM-Cartridges.jpg"
 			alt="Cartridge">
 		</div>
 	</div>
