@@ -79,3 +79,6 @@ function more_posts() {
 function custom_more_posts($customQuery) {
   return $customQuery->current_post + 1 < $customQuery->post_count;
 }
+
+//Poedit Language support
+load_theme_textdomain('Team-No-Comply-Games');
