@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Team No Comply Games Wordpress\n"
+"POT-Creation-Date: 2016-05-06 12:22-0700\n"
+"PO-Revision-Date: 2016-05-06 12:28-0700\n"
+"Language-Team: Team No Comply Games\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Last-Translator: \n"
+"Language: es\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:6
+msgid "Error 404. Try blowing the cartridge?"
+msgstr "Error 404. Trate de soplar el cartucho ?"
+
+#: archive.php:9
+msgid "Archive for the "
+msgstr "Archivo de la"
+
+#: archive.php:15
+msgid "Category"
+msgstr "Categoría"
+
+#: archive.php:23
+msgid "Posts Tagged "
+msgstr "Posts etiquetados"
+
+#: archive.php:34 archive.php:42 archive.php:51
+msgid "Archive for "
+msgstr "Archivo para"
+
+#: archive.php:60
+msgid "Author Archive"
+msgstr "archivo de autor"
+
+#: archive.php:67
+msgid "Blog Archives"
+msgstr "archivos del blog"
+
+#: archive.php:75
+msgid "Nothing Found"
+msgstr "Nada Encontrado"
+
+#: comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Este artículo está protegido por contraseña. Introduzca la contraseña para ver los comentarios ."
+
+#: comments.php:29
+msgid "No comments so far."
+msgstr "No hay comentarios hasta el momento."
+
+#: comments.php:35
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:50
+msgid "You must be "
+msgstr "Usted debe ser"
+
+#: comments.php:54
+msgid "logged in"
+msgstr "conectado"
+
+#: comments.php:58
+msgid " to post a comment."
+msgstr "para publicar un comentario."
+
+#: comments.php:66
+msgid " Log out "
+msgstr "Cerrar sesión"
+
+#: comments.php:73
+msgid "Name"
+msgstr "Nombre"
+
+#: comments.php:81
+msgid "Mail (Will not be published)"
+msgstr "Correo (No será publicado)"
+
+#: comments.php:89
+msgid "Website"
+msgstr "Sitio web"
+
+#: comments.php:98
+msgid "Message"
+msgstr "Mensaje"
+
+#: footer.php:5
+msgid "Copyright "
+msgstr "Derechos de autor"
+
+#: functions.php:52
+msgid "Sidebar"
+msgstr "barra lateral"
+
+#: loop-games.php:63 loop-media.php:114 loop.php:140
+msgid "Nothing Matches your query."
+msgstr "Nada se compara con su búsqueda ."
+
+#: loop-media.php:85 loop.php:82
+msgid "Video Link"
+msgstr "Enlace de video"
+
+#: searchform.php:5
+msgid "Search for:"
+msgstr "Buscar:"
+
+msgid "Cideo Link"
+msgstr "Cideo Link"
