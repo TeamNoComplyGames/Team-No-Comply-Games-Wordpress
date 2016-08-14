@@ -2,7 +2,7 @@
 
 Made with [Yeopress](https://github.com/wesleytodd/YeoPress)
 
-![Site Screenshot](https://nocomplygames.com/wp-content/uploads/2016/05/Screenshot-from-2016-05-06-14-08-41.png)
+![Site Screenshot](https://files.aaronthedev.com/$/sv38z)
 
 ##How to get started with Yeopress
 
